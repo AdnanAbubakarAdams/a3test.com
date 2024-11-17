@@ -1,9 +1,9 @@
 ############################################
 ############### zone records ##############
 ###########################################
-resource "cloudflare_record" "a3test_com" {
+resource "cloudflare_record" "root_name" {
   zone_id = cloudflare_zone.azone.id
-  name    = "testing"
+  name    = "@"
   type    = "CNAME"
   ttl     = 1
   proxied = true
