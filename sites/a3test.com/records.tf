@@ -1,7 +1,7 @@
 ############################################
 ############### zone records ##############
 ###########################################
-resource "cloudflare_record" "testing_a3techtest_org" {
+resource "cloudflare_record" "testing_a3test_com" {
   zone_id = cloudflare_zone.azone.id
   name    = "testing"
   type    = "CNAME"
