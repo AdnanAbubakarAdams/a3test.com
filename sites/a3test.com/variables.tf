@@ -1,10 +1,10 @@
 #########################################
 ############ storing Variables ##########
 #########################################
-# variable "zone_id" {
-#   type        = string
-#   description = "The zone ID for Cloudflare"
-# }
+variable "zone_id" {
+  type        = string
+  description = "The zone ID for Cloudflare"
+}
 
 variable "account_id" {
   type        = string
