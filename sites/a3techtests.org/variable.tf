@@ -19,5 +19,5 @@ variable "cloudflare_api_token" {
 variable "domain_name" {
   type        = string
   description = "The domain name on Cloudflare"
-  default     = "a3techtests.com"
+  default     = "a3techtests.org"
 }
