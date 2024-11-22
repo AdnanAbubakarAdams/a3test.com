@@ -12,7 +12,7 @@ resource "cloudflare_record" "root_name" {
 
 resource "cloudflare_record" "www" {
   zone_id = cloudflare_zone.azone.id
-  name = "www"
+  name = "www-r"
   type = "CNAME"
   ttl = 1
   proxied = true
