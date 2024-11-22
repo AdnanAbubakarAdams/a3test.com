@@ -9,3 +9,12 @@ resource "cloudflare_record" "root_name" {
   proxied = true
   content = "testing.a3test.com"
 }
+
+resource "cloudflare_record" "www" {
+  zone_id = cloudflare_zone.azone.id
+  name = "www"
+  type = "CNAME"
+  ttl = 1
+  proxied = true
+  content = "www.a3test.com"
+}
