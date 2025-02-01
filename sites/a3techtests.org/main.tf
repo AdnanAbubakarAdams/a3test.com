@@ -1,10 +1,10 @@
-# locals {
-#   domain = "react-cf-a1c.pages.dev"
-# }
+# retrieve the existing cloudlare zone
+data "cloudflare_zone" "azone" {
+  name = "a3techtests.org"
+}
 
-resource "cloudflare_zone" "azone" {
-  zone = var.domain_name
-  #   zone_id = var.zone_id
-  plan       = "free"
-  account_id = var.account_id
+
+# Output the zone ID for verification
+output "zone_id" {
+  value = data.cloudflare_zone.azone.id
 }

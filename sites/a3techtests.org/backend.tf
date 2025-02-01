@@ -5,7 +5,7 @@ terraform {
     workspaces {
       project = "cf-like-work"
       # tags = []
-      name = "a3testcom"
+      name = "a3techtestorg"
     }
   }
 }
