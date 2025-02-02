@@ -12,6 +12,4 @@ resource "cloudflare_ruleset" "a3_techtest_org_custom_rules" {
     description = "FW-RULE-ALLOW LIST"
     enabled = true
   }
-
-
 }
