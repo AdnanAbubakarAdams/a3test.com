@@ -23,7 +23,8 @@
 resource "cloudflare_record" "pages_cname" {
   zone_id = data.cloudflare_zone.azone.id
   name    = "www"
-  content   = "react-cf-a1c.pages.dev"
   type    = "CNAME"
+  ttl = 1
   proxied = true
+  content   = "react-cf-a1c.pages.dev"
 }

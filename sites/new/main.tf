@@ -16,7 +16,7 @@ resource "cloudflare_record" "pages_cname" {
   proxied = true
 }
 
-# Output the zone ID for verification
+# Output the zone ID for verification`
 output "zone_id" {
   value = data.cloudflare_zone.azone.id
 }
