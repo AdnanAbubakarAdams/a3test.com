@@ -9,7 +9,7 @@ resource "cloudflare_ruleset" "a3_techtest_org_custom_rules" {
   rules {
     action = "skip"
     expression = "(http.host contains \".org\" and ip.src in {170.85.72.0/24 170.85.73.0/24 170.85.71.0/24 68.197.1.0/24})"
-    description = "FW-RULE-ALLOW LIST"
+    description = "FW-RULE-ALLOW LIST" #hopefully this works
     enabled = true
   }
 }
