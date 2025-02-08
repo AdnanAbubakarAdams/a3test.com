@@ -1,6 +1,6 @@
 ###########custom rules #############
 resource "cloudflare_ruleset" "a3_techtest_org_custom_rules" {
-  zone_id = data.cloudflare_zone.azone.id
+  zone_id = cloudflare_zone.azone.id
   name = "ingress rules"
   description = "custom rules for zone"
   kind = "zone"
