@@ -16,8 +16,8 @@ variable "cloudflare_api_token" {
   description = "The cloudflare API token"
 }
 
-# variable "domain_name" {
-#   type        = string
-#   description = "The domain name on Cloudflare"
-#   default     = "a3techtests.org"
-# }
+variable "domain_name" {
+  type        = string
+  description = "The domain name on Cloudflare"
+  default     = "a3techtests.org"
+}
